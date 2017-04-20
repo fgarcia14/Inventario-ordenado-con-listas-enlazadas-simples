@@ -41,10 +41,6 @@
 			this.btnEliminar = new System.Windows.Forms.Button();
 			this.txtConsola = new System.Windows.Forms.TextBox();
 			this.btnReporte = new System.Windows.Forms.Button();
-			this.lblInsertar = new System.Windows.Forms.Label();
-			this.txtPocision = new System.Windows.Forms.TextBox();
-			this.btnInsertar = new System.Windows.Forms.Button();
-			this.btnAgregarInicio = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblCodigo
@@ -113,11 +109,11 @@
 			// 
 			// btnAgregarFinal
 			// 
-			this.btnAgregarFinal.Location = new System.Drawing.Point(118, 164);
+			this.btnAgregarFinal.Location = new System.Drawing.Point(12, 164);
 			this.btnAgregarFinal.Name = "btnAgregarFinal";
-			this.btnAgregarFinal.Size = new System.Drawing.Size(101, 56);
+			this.btnAgregarFinal.Size = new System.Drawing.Size(207, 31);
 			this.btnAgregarFinal.TabIndex = 8;
-			this.btnAgregarFinal.Text = "Agregar a final";
+			this.btnAgregarFinal.Text = "Agregar";
 			this.btnAgregarFinal.UseVisualStyleBackColor = true;
 			this.btnAgregarFinal.Click += new System.EventHandler(this.btnAgregar_Click);
 			// 
@@ -159,51 +155,11 @@
 			this.btnReporte.UseVisualStyleBackColor = true;
 			this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
 			// 
-			// lblInsertar
-			// 
-			this.lblInsertar.AutoSize = true;
-			this.lblInsertar.Location = new System.Drawing.Point(12, 223);
-			this.lblInsertar.Name = "lblInsertar";
-			this.lblInsertar.Size = new System.Drawing.Size(176, 24);
-			this.lblInsertar.TabIndex = 13;
-			this.lblInsertar.Text = "Pocision (opcional):";
-			// 
-			// txtPocision
-			// 
-			this.txtPocision.Location = new System.Drawing.Point(194, 223);
-			this.txtPocision.Name = "txtPocision";
-			this.txtPocision.Size = new System.Drawing.Size(48, 29);
-			this.txtPocision.TabIndex = 14;
-			// 
-			// btnInsertar
-			// 
-			this.btnInsertar.Location = new System.Drawing.Point(248, 223);
-			this.btnInsertar.Name = "btnInsertar";
-			this.btnInsertar.Size = new System.Drawing.Size(87, 31);
-			this.btnInsertar.TabIndex = 15;
-			this.btnInsertar.Text = "Insertar";
-			this.btnInsertar.UseVisualStyleBackColor = true;
-			this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
-			// 
-			// btnAgregarInicio
-			// 
-			this.btnAgregarInicio.Location = new System.Drawing.Point(11, 164);
-			this.btnAgregarInicio.Name = "btnAgregarInicio";
-			this.btnAgregarInicio.Size = new System.Drawing.Size(101, 56);
-			this.btnAgregarInicio.TabIndex = 16;
-			this.btnAgregarInicio.Text = "Agregar en inicio";
-			this.btnAgregarInicio.UseVisualStyleBackColor = true;
-			this.btnAgregarInicio.Click += new System.EventHandler(this.btnAgregarInicio_Click);
-			// 
 			// frmPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(571, 277);
-			this.Controls.Add(this.btnAgregarInicio);
-			this.Controls.Add(this.btnInsertar);
-			this.Controls.Add(this.txtPocision);
-			this.Controls.Add(this.lblInsertar);
+			this.ClientSize = new System.Drawing.Size(571, 207);
 			this.Controls.Add(this.btnReporte);
 			this.Controls.Add(this.txtConsola);
 			this.Controls.Add(this.btnEliminar);
@@ -241,10 +197,6 @@
 		private System.Windows.Forms.Button btnEliminar;
 		private System.Windows.Forms.TextBox txtConsola;
 		private System.Windows.Forms.Button btnReporte;
-		private System.Windows.Forms.Label lblInsertar;
-		private System.Windows.Forms.TextBox txtPocision;
-		private System.Windows.Forms.Button btnInsertar;
-		private System.Windows.Forms.Button btnAgregarInicio;
 	}
 }
 

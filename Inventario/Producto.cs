@@ -57,7 +57,7 @@ namespace Inventario
 		/// <returns></returns>
 		public override string ToString()
 		{
-			return nombre;
+			return codigo + " " + nombre + " " + cantidad + " $" + precio;
 		}
 	}
 }
