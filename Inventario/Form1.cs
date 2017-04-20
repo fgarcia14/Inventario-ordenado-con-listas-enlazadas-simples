@@ -32,8 +32,17 @@ namespace Inventario
 		private void btnAgregar_Click(object sender, EventArgs e)
 		{
 			Producto producto = new Producto(Convert.ToInt32(txtCodigo.Text), txtNombre.Text, Convert.ToInt32(txtCantidad.Text), Convert.ToInt32(txtPrecio.Text));
-			inventario.agregar(producto);
+			inventario.agregarFinal(producto);
 			limpiar();
+			txtCodigo.Focus();
+		}
+
+		private void btnAgregarInicio_Click(object sender, EventArgs e)
+		{
+			Producto producto = new Producto(Convert.ToInt32(txtCodigo.Text), txtNombre.Text, Convert.ToInt32(txtCantidad.Text), Convert.ToInt32(txtPrecio.Text));
+			inventario.agregarInicio(producto);
+			limpiar();
+			txtCodigo.Focus();
 		}
 
 		private void bntBuscar_Click(object sender, EventArgs e)
@@ -42,6 +51,10 @@ namespace Inventario
 			if (inventario.buscar(codigo)!=null)
 			{
 				txtConsola.Text = inventario.buscar(codigo).nombre;
+			}
+			else
+			{
+				txtConsola.Clear();
 			}
 			limpiar();
 		}
@@ -62,5 +75,7 @@ namespace Inventario
 			inventario.insertar(producto, Convert.ToInt32(txtPocision.Text));
 			limpiar();
 		}
+
+		
 	}
 }

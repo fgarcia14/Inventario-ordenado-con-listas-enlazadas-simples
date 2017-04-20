@@ -36,7 +36,7 @@
 			this.txtNombre = new System.Windows.Forms.TextBox();
 			this.txtCantidad = new System.Windows.Forms.TextBox();
 			this.txtPrecio = new System.Windows.Forms.TextBox();
-			this.btnAgregar = new System.Windows.Forms.Button();
+			this.btnAgregarFinal = new System.Windows.Forms.Button();
 			this.bntBuscar = new System.Windows.Forms.Button();
 			this.btnEliminar = new System.Windows.Forms.Button();
 			this.txtConsola = new System.Windows.Forms.TextBox();
@@ -44,6 +44,7 @@
 			this.lblInsertar = new System.Windows.Forms.Label();
 			this.txtPocision = new System.Windows.Forms.TextBox();
 			this.btnInsertar = new System.Windows.Forms.Button();
+			this.btnAgregarInicio = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lblCodigo
@@ -110,15 +111,15 @@
 			this.txtPrecio.Size = new System.Drawing.Size(95, 29);
 			this.txtPrecio.TabIndex = 7;
 			// 
-			// btnAgregar
+			// btnAgregarFinal
 			// 
-			this.btnAgregar.Location = new System.Drawing.Point(11, 164);
-			this.btnAgregar.Name = "btnAgregar";
-			this.btnAgregar.Size = new System.Drawing.Size(186, 31);
-			this.btnAgregar.TabIndex = 8;
-			this.btnAgregar.Text = "Agregar";
-			this.btnAgregar.UseVisualStyleBackColor = true;
-			this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+			this.btnAgregarFinal.Location = new System.Drawing.Point(118, 164);
+			this.btnAgregarFinal.Name = "btnAgregarFinal";
+			this.btnAgregarFinal.Size = new System.Drawing.Size(101, 56);
+			this.btnAgregarFinal.TabIndex = 8;
+			this.btnAgregarFinal.Text = "Agregar a final";
+			this.btnAgregarFinal.UseVisualStyleBackColor = true;
+			this.btnAgregarFinal.Click += new System.EventHandler(this.btnAgregar_Click);
 			// 
 			// bntBuscar
 			// 
@@ -184,11 +185,22 @@
 			this.btnInsertar.UseVisualStyleBackColor = true;
 			this.btnInsertar.Click += new System.EventHandler(this.btnInsertar_Click);
 			// 
+			// btnAgregarInicio
+			// 
+			this.btnAgregarInicio.Location = new System.Drawing.Point(11, 164);
+			this.btnAgregarInicio.Name = "btnAgregarInicio";
+			this.btnAgregarInicio.Size = new System.Drawing.Size(101, 56);
+			this.btnAgregarInicio.TabIndex = 16;
+			this.btnAgregarInicio.Text = "Agregar en inicio";
+			this.btnAgregarInicio.UseVisualStyleBackColor = true;
+			this.btnAgregarInicio.Click += new System.EventHandler(this.btnAgregarInicio_Click);
+			// 
 			// frmPrincipal
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(571, 277);
+			this.Controls.Add(this.btnAgregarInicio);
 			this.Controls.Add(this.btnInsertar);
 			this.Controls.Add(this.txtPocision);
 			this.Controls.Add(this.lblInsertar);
@@ -196,7 +208,7 @@
 			this.Controls.Add(this.txtConsola);
 			this.Controls.Add(this.btnEliminar);
 			this.Controls.Add(this.bntBuscar);
-			this.Controls.Add(this.btnAgregar);
+			this.Controls.Add(this.btnAgregarFinal);
 			this.Controls.Add(this.txtPrecio);
 			this.Controls.Add(this.txtCantidad);
 			this.Controls.Add(this.txtNombre);
@@ -224,7 +236,7 @@
 		private System.Windows.Forms.TextBox txtNombre;
 		private System.Windows.Forms.TextBox txtCantidad;
 		private System.Windows.Forms.TextBox txtPrecio;
-		private System.Windows.Forms.Button btnAgregar;
+		private System.Windows.Forms.Button btnAgregarFinal;
 		private System.Windows.Forms.Button bntBuscar;
 		private System.Windows.Forms.Button btnEliminar;
 		private System.Windows.Forms.TextBox txtConsola;
@@ -232,6 +244,7 @@
 		private System.Windows.Forms.Label lblInsertar;
 		private System.Windows.Forms.TextBox txtPocision;
 		private System.Windows.Forms.Button btnInsertar;
+		private System.Windows.Forms.Button btnAgregarInicio;
 	}
 }
 

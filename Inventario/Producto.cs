@@ -13,6 +13,8 @@ namespace Inventario
 		private int _cantidad;
 		private int _precio;
 
+		public Producto siguiente;
+
 		public int codigo
 		{
 			get{ return _codigo; }
@@ -34,6 +36,13 @@ namespace Inventario
 			get{ return _precio; }
 		}
 
+		/// <summary>
+		/// Crea un nuevo producto, se necesitan de los parametros indicados para su creacion
+		/// </summary>
+		/// <param name="codigo"></param>
+		/// <param name="nombre"></param>
+		/// <param name="cantidad"></param>
+		/// <param name="precio"></param>
 		public Producto(int codigo, string nombre, int cantidad, int precio)
 		{
 			_codigo = codigo;
@@ -42,6 +51,10 @@ namespace Inventario
 			_precio = precio;
 		}
 
+		/// <summary>
+		/// Devuelve el nombre del producto
+		/// </summary>
+		/// <returns></returns>
 		public override string ToString()
 		{
 			return nombre;
